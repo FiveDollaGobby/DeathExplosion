@@ -79,8 +79,15 @@ Permissions: Set up permissions via your server's permission system to control a
 ```
 
 
+### TODO
 
-
-
-
- [DeathExplosion README.docx](https://github.com/FiveDollaGobby/DeathExplosion/files/15142276/DeathExplosion.README.docx)
+- [ ] Explosion Damage Toggle
+- [ ] Custom Explosion Shapes
+- [ ] Economy Integration
+- [ ] Randomized Particle Effect Option
+- [ ] Visual Effect Intensity Levels
+- [ ] Sound Effects
+- [ ] WorldGuard Integration
+- [ ] Player-Specific Settings Panel
+- [ ] Logging and Analytics
+- [ ] Event Triggers
