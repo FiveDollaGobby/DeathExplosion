@@ -1,0 +1,15 @@
+# Default settings for the explosion behavior
+explosionPower: 4.0
+breakBlocks: true
+# Default particle type for explosions when not specified by the player
+defaultParticle: 'EXPLOSION_HUGE'
+particleAmount: 100  # Default number of particles to spawn, 100 is a good starting amount
+
+# individual player settings here
+players:
+  # Example UUID for a player
+  'uuid-of-player-1':
+    particle: 'FLAME'
+
+  'uuid-of-player-2':
+    particle: 'HEART'
