@@ -11,6 +11,8 @@ Permission-Based Settings: Integration with server permissions allows fine-grain
 GUI for Particle Selection: A user-friendly GUI lets players choose their explosion particle effect from a variety of options, each represented by visually intuitive icons.
 
 Configurable Particle Amounts: The density of the particle effects can be adjusted in the configuration file, allowing server admins to balance aesthetics with performance based on their server's capabilities.
+
+![Alt Text](https://i.imgur.com/sJs1d1A.gif)
  
 ## How It Works:
 Player Death: When a player with the appropriate permissions dies, an explosion is triggered at their location.
