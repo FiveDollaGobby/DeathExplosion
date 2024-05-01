@@ -33,6 +33,8 @@ breakBlocks: Determines if the explosion can break blocks.
 defaultParticle: Sets the default particle effect used for explosions.
 
 particleAmount: Controls the number of particles used in the effect.
+
+damagePlayers: Enables Damage towards players.
  
 ## Installation and Setup:
 Installation: Drop the plugin JAR file into your server's plugins directory.
@@ -41,47 +43,70 @@ Configuration: Adjust the config.yml file as needed.
 
 Permissions: Set up permissions via your server's permission system to control access to various features.
  
+## Commands
+
+/detoggleplayerdamage
+
+/deselectparticle
+
+/dereload
+
+/degui
+
+
+
  
 ## Permissions:
 ```  
-  - dexplode.gui.access:
-    - description: Allows access to the particle selection GUI
-    
-  - dexplode.explode:
-    - description: Allows player to explode on death
-  
-  - dexplode.explode.EXPLOSION_HUGE:
-    - description: Allows using EXPLOSION_HUGE particles
-    
-  - dexplode.explode.FLAME:
-    - description: Allows using FLAME particles
-    
-  - dexplode.explode.SMOKE_LARGE:
-    - description: Allows using SMOKE_LARGE particles
-    
-  - dexplode.explode.LAVA:
-    - description: Allows using LAVA particles
-    
-  - dexplode.explode.HEART:
-    - description: Allows using HEART particles
-    
-  - dexplode.explode.WATER_DROP:
-    - description: Allows using WATER_DROP particles
-    
-  - dexplode.explode.VILLAGER_HAPPY:
-    - description: Allows using VILLAGER_HAPPY particles
-    
-  - dexplode.explode.FIREWORKS_SPARK:
-    - description: Allows using FIREWORKS_SPARK particles
-    
-  - dexplode.explode.MAGIC_CRIT:
-    - description: Allows using MAGIC_CRIT particles
+   dexplode.gui.access:
+    description: Allows access to the particle selection GUI
+    default: op
+  dexplode.explode:
+    description: Allows player to explode on death
+    default: false
+  dexplode.reload:
+    description: Allows reloading the plugin config.yml
+    default: op
+  dexplode.maingui:
+    description: Allows access to the explosion menu GUI
+    default: op
+  deexplode.toggle.damage:
+    description: Allows toggling whether explosions damage players
+    default: op
+  dexplode.explode.EXPLOSION_HUGE:
+    description: Allows using EXPLOSION_HUGE particles
+    default: op
+  dexplode.explode.FLAME:
+    description: Allows using FLAME particles
+    default: op
+  dexplode.explode.SMOKE_LARGE:
+    description: Allows using SMOKE_LARGE particles
+    default: op
+  dexplode.explode.LAVA:
+    description: Allows using LAVA particles
+    default: op
+  dexplode.explode.HEART:
+    description: Allows using HEART particles
+    default: op
+  dexplode.explode.WATER_DROP:
+    description: Allows using WATER_DROP particles
+    default: op
+  dexplode.explode.VILLAGER_HAPPY:
+    description: Allows using VILLAGER_HAPPY particles
+    default: op
+  dexplode.explode.FIREWORKS_SPARK:
+    description: Allows using FIREWORKS_SPARK particles
+    default: op
+  dexplode.explode.MAGIC_CRIT:
+    description: Allows using MAGIC_CRIT particles
+    default: op
+
 ```
 
 
 ### TODO
 
-- [ ] Explosion Damage Toggle
+- [X] Explosion Damage Toggle
 - [ ] Custom Explosion Shapes
 - [ ] Economy Integration
 - [ ] Randomized Particle Effect Option
